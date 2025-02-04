@@ -5,15 +5,16 @@ import FeaturesSection from '@/components/Features';
 import Navigation from '@/components/Navigation';
 import StepsSection from '@/components/StepsSection';
 import Reviews from '@/components/reviews';
-import { Star } from 'lucide-react';
+import { Star, Phone } from 'lucide-react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Head from 'next/head';
 
-const SITE_URL = 'https://toronto-drywall.com';
-const SITE_NAME = 'Toronto Drywall Repairs';
-const SITE_DESCRIPTION = 'Professional drywall installation, repair, and finishing services across the Greater Toronto Area. Expert contractors with 500+ satisfied clients.';
-const BUSINESS_EMAIL = 'office@toronto-drywall.com';
+const SITE_URL = 'https://burnabydrywall.ca';
+const SITE_NAME = 'Vancouver and Burnaby Wall Repair Ltd.';
+const SITE_DESCRIPTION = 'Professional wall repair, installation, and finishing services across Vancouver and Burnaby. Expert contractors with 500+ satisfied clients.';
+const BUSINESS_EMAIL = 'office@burnabydrywall.ca';
+const BUSINESS_PHONE = '(778) 652-7277';
 
 const Home = () => {
   const router = useRouter();
@@ -27,33 +28,34 @@ const Home = () => {
     description: SITE_DESCRIPTION,
     url: SITE_URL,
     email: BUSINESS_EMAIL,
+    telephone: BUSINESS_PHONE,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Toronto',
-      addressRegion: 'ON',
+      addressLocality: 'Burnaby',
+      addressRegion: 'BC',
       addressCountry: 'CA'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 43.6532,
-      longitude: -79.3832
+      latitude: 49.2488,
+      longitude: -122.9805
     },
     areaServed: [
       {
         '@type': 'City',
-        name: 'Toronto'
+        name: 'Vancouver'
       },
       {
         '@type': 'City',
-        name: 'North York'
+        name: 'Burnaby'
       },
       {
         '@type': 'City',
-        name: 'Etobicoke'
+        name: 'New Westminster'
       },
       {
         '@type': 'City',
-        name: 'Scarborough'
+        name: 'Richmond'
       }
     ],
     priceRange: '$$',
@@ -69,7 +71,7 @@ const Home = () => {
     },
     areaServed: {
       '@type': 'City',
-      name: 'Toronto'
+      name: 'Vancouver and Burnaby'
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
@@ -80,7 +82,7 @@ const Home = () => {
           itemOffered: {
             '@type': 'Service',
             name: 'Drywall Installation',
-            description: 'Professional drywall installation services in Toronto'
+            description: 'Professional drywall installation services in Vancouver and Burnaby'
           }
         },
         {
@@ -120,7 +122,7 @@ const Home = () => {
         name: 'Do you provide free estimates?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, we provide free, no-obligation estimates for all drywall repair and installation projects in Toronto.'
+          text: 'Yes, we provide free, no-obligation estimates for all drywall repair and installation projects in Vancouver and Burnaby.'
         }
       }
     ]
@@ -129,7 +131,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>{SITE_NAME} | Expert Drywall Services in Toronto</title>
+        <title>{SITE_NAME} | Expert Drywall Services in Vancouver & Burnaby</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -137,7 +139,7 @@ const Home = () => {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
-        <meta property="og:title" content={`${SITE_NAME} | Expert Drywall Services in Toronto`} />
+        <meta property="og:title" content={`${SITE_NAME} | Expert Drywall Services in Vancouver & Burnaby`} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content={`${SITE_URL}/photos/homepage/1.jpg`} />
         <meta property="og:site_name" content={SITE_NAME} />
@@ -151,13 +153,13 @@ const Home = () => {
         <meta name="twitter:image" content={`${SITE_URL}/photos/homepage/1.jpg`} />
 
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="drywall repair toronto, drywall installation, drywall contractors, toronto drywall services, gta drywall repair" />
+        <meta name="keywords" content="drywall repair vancouver, drywall repair burnaby, drywall installation, drywall contractors, vancouver drywall services" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content={SITE_NAME} />
-        <meta name="geo.region" content="CA-ON" />
-        <meta name="geo.placename" content="Toronto" />
-        <meta name="geo.position" content="43.6532;-79.3832" />
-        <meta name="ICBM" content="43.6532, -79.3832" />
+        <meta name="geo.region" content="CA-BC" />
+        <meta name="geo.placename" content="Burnaby" />
+        <meta name="geo.position" content="49.2488;-122.9805" />
+        <meta name="ICBM" content="49.2488, -122.9805" />
 
         {/* Canonical URL */}
         <link rel="canonical" href={SITE_URL} />
@@ -190,7 +192,7 @@ const Home = () => {
           <div className="absolute inset-0 w-full h-full">
             <Image
               src="/photos/homepage/1.jpg"
-              alt="Professional Drywall Repair Services in Toronto"
+              alt="Professional Drywall Repair Services in Vancouver & Burnaby"
               fill
               className="object-cover object-[85%_25%]"
               priority
@@ -201,23 +203,31 @@ const Home = () => {
           <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 w-full">
             <div className="max-w-2xl">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white">
-                Expert Drywall Repairs in Toronto
+                Expert Wall Repairs in Vancouver and Burnaby
               </h1>
               <p className="text-xl md:text-2xl text-white mb-8">
-                Professional drywall installation, repair, and finishing services across the GTA
+                Professional drywall installation, repair, and finishing services across Vancouver and Burnaby
               </p>
-              <button
-                onClick={() => window.open('/quote', '_current')}
-                className="bg-white text-black px-8 py-4 rounded-lg text-lg font-medium mb-8 hover:bg-yellow-400 transition-colors duration-300">
-                Get Free Estimate
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <button
+                  onClick={() => window.open('/quote', '_current')}
+                  className="bg-white text-black px-8 py-4 rounded-lg text-lg font-medium hover:bg-yellow-400 transition-colors duration-300">
+                  Get Free Estimate
+                </button>
+                <a 
+                  href={`tel:${BUSINESS_PHONE}`}
+                  className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-white hover:text-black transition-colors duration-300">
+                  <Phone className="w-5 h-5" />
+                  {BUSINESS_PHONE}
+                </a>
+              </div>
               <div className="flex items-center gap-3">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-white text-lg">500+ Satisfied Clients in Toronto</span>
+                <span className="text-white text-lg">500+ Satisfied Clients in Vancouver & Burnaby</span>
               </div>
             </div>
           </div>
@@ -234,10 +244,10 @@ const Home = () => {
         <section className="bg-black text-white py-24">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Need Professional Drywall Services in Toronto?
+              Need Professional Wall Repair Services in Vancouver and Burnaby?
             </h2>
             <p className="text-gray-300 mb-12 text-xl max-w-3xl mx-auto">
-              Join hundreds of satisfied Toronto homeowners who trust us with their drywall needs
+              Join hundreds of satisfied Vancouver and Burnaby homeowners who trust us with their drywall needs
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
