@@ -24,6 +24,7 @@ const Home = () => {
     '@type': 'LocalBusiness',
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
+    alternateName: 'PG Wall Finishing',
     image: `${SITE_URL}/photos/homepage/1.jpg`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
