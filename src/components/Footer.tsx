@@ -14,7 +14,7 @@ const Footer = () => {
             </h3>
             <div className="h-1 w-12 bg-yellow-400 mb-6"></div>
             <p className="text-gray-300 leading-relaxed">
-              From small repairs to complete commercial installations, we deliver professional wall repair services across Vancouver and Burnaby. Our commitment to quality and customer satisfaction makes us the Lower Mainland's preferred choice for all wall repair needs.
+              From small repairs to complete commercial installations, we deliver professional wall repair services across Vancouver and Burnaby. Our commitment to quality and customer satisfaction makes us the Lower Mainland preferred choice for all wall repair needs.
             </p>
           </div>
 
