@@ -73,7 +73,7 @@ const Footer = () => {
             <div className="text-gray-300 space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 text-yellow-400" />
-                <p>Burnaby, British Columbia</p>
+                <p>1223 Homer St<br />Vancouver, British Columbia V6B 1C5</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-yellow-400" />

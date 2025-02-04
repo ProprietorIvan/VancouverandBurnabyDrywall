@@ -66,7 +66,7 @@ const Home = () => {
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: ['Drywall Installation', 'Drywall Repair', 'Drywall Finishing'],
+    serviceType: ['Wall Finishing', 'Drywall Repair', 'Appliance Repair'],
     provider: {
       '@id': `${SITE_URL}/#organization`
     },
@@ -76,14 +76,22 @@ const Home = () => {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Drywall Services',
+      name: 'Professional Services',
       itemListElement: [
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Drywall Installation',
-            description: 'Professional drywall installation services in Vancouver and Burnaby'
+            name: 'Wall Finishing',
+            description: 'Expert wall and drywall finishing services in Vancouver and Burnaby'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Appliance Repair',
+            description: 'Professional repair services for all major appliance brands'
           }
         },
         {
@@ -92,14 +100,6 @@ const Home = () => {
             '@type': 'Service',
             name: 'Drywall Repair',
             description: 'Expert drywall repair and patch services'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Drywall Finishing',
-            description: 'High-quality drywall finishing and texturing'
           }
         }
       ]
@@ -154,7 +154,7 @@ const Home = () => {
         <meta name="twitter:image" content={`${SITE_URL}/photos/homepage/1.jpg`} />
 
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="drywall repair vancouver, drywall repair burnaby, drywall installation, drywall contractors, vancouver drywall services" />
+        <meta name="keywords" content="wall finishing vancouver, appliance repair vancouver, drywall repair burnaby, appliance repair burnaby, home repair services" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content={SITE_NAME} />
         <meta name="geo.region" content="CA-BC" />
