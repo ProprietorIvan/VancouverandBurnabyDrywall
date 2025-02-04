@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, ClipboardCheck, Building2, Wrench, CheckCircle2, Sparkles } from 'lucide-react';
+import { Phone, ClipboardCheck, Wrench, TestTube2, CheckCircle2, Sparkles } from 'lucide-react';
 
 const StepsSection = () => {
   const steps = [
@@ -7,37 +7,37 @@ const StepsSection = () => {
       icon: Phone,
       number: "01",
       title: "Initial Contact",
-      description: "The journey to perfect walls begins here. Our expert team takes the time to deeply understand your project requirements, whether you're dealing with a minor repair or planning a multi-floor commercial installation in Vancouver or Burnaby. We'll discuss your timeline, specific requirements, and any unique challenges your project might present. Within 24 hours, you'll receive a comprehensive quote that breaks down every aspect of the work, ensuring complete transparency from day one."
+      description: "Whether your appliance has stopped working or you need wall repairs, our team is ready to help. We'll gather details about your appliance's make and model or your wall repair needs, discuss symptoms or damage, and provide an initial assessment. You'll receive a comprehensive quote within 2 hours, ensuring transparent pricing from the start."
     },
     {
       icon: ClipboardCheck,
       number: "02",
-      title: "Expert Assessment",
-      description: "This crucial step sets the foundation for success. Our seasoned professionals conduct a thorough on-site evaluation, analyzing everything from substrate conditions to environmental factors that could impact your project. We're particularly experienced with the unique challenges presented by Vancouver's climate and building styles. We'll identify potential challenges before they become issues and develop a strategic approach tailored to your specific situation. Years of handling projects across Metro Vancouver have taught us that proper planning eliminates 90% of potential complications."
-    },
-    {
-      icon: Building2,
-      number: "03",
-      title: "Professional Construction",
-      description: "This is where experience truly matters. Our crews bring decades of combined expertise to every project, from precise patch jobs to complete building envelopes. We utilize advanced techniques and premium materials that ensure longevity and perfection, particularly important in Vancouver's variable climate. Our team coordinates seamlessly with other trades when necessary, maintaining strict timelines while never compromising on quality. Whether it's a small repair in Burnaby or a massive commercial project in Vancouver, we approach each task with the same level of dedication and precision."
+      title: "Diagnostic Assessment",
+      description: "For appliance repairs, our certified technicians perform thorough diagnostics using advanced testing equipment to pinpoint the exact issue. We check all components and systems to ensure nothing is overlooked. For wall repairs, we assess the damage extent and underlying causes. Our experience with both services allows us to identify when appliance issues might have caused wall damage, offering comprehensive solutions."
     },
     {
       icon: Wrench,
+      number: "03",
+      title: "Professional Repair",
+      description: "Our skilled technicians get to work, whether it's replacing a faulty dishwasher pump or repairing damaged drywall. We stock common replacement parts for major appliance brands and carry professional-grade wall repair materials. Most appliance repairs are completed same-day, while wall repairs are scheduled to ensure proper drying and finishing time. We maintain a clean workspace and protect your home throughout the process."
+    },
+    {
+      icon: TestTube2,
       number: "04",
-      title: "Expert Finishing",
-      description: "The difference between good and exceptional lies in the details. Our finishing process involves multiple stages of careful preparation and skilled application. We've mastered the art of matching existing textures and creating flawless new surfaces, adapting our techniques to suit both modern and heritage buildings throughout Vancouver and Burnaby. Each wall receives multiple inspections under various lighting conditions to ensure perfect uniformity. This meticulous attention to detail is why our work stands out and why clients consistently trust us with their most demanding projects."
+      title: "Quality Testing",
+      description: "Every repaired appliance undergoes comprehensive testing to ensure all functions work perfectly. We run multiple cycles and check all settings. For wall repairs, we ensure proper setting of materials and verify smooth integration with existing surfaces. This thorough approach guarantees lasting results for both services."
     },
     {
       icon: CheckCircle2,
       number: "05",
-      title: "Quality Inspection",
-      description: "Our quality control process is what sets us apart in the Lower Mainland's construction industry. Every surface undergoes a comprehensive multi-point inspection. We examine not just the obvious aspects but delve deeper - checking for proper depth of joints, perfect seam alignment, and complete uniformity of finish. We use specialized lighting and advanced techniques to identify and address any imperfections that might be invisible to the untrained eye. This thoroughness ensures that your project will meet not just industry standards, but our own exacting criteria."
+      title: "Final Inspection",
+      description: "Our quality control process is rigorous for both appliance and wall repairs. For appliances, we verify proper operation, energy efficiency, and safety components. Wall repairs receive detailed inspection under various lighting conditions to ensure perfect finishing. We don't consider the job complete until every detail meets our exacting standards."
     },
     {
       icon: Sparkles,
       number: "06",
-      title: "Complete Satisfaction",
-      description: "The final step is ensuring your complete satisfaction with our work. We conduct a detailed walkthrough, explaining the technical aspects of what we've done and how to maintain the perfect finish we've achieved. Any concerns are addressed immediately by our expert team. This commitment to excellence doesn't end with project completion - we're always available to provide expert advice or address any future needs. It's this dedication to client satisfaction that's earned us our reputation as Vancouver and Burnaby's premier wall repair specialists."
+      title: "Service Guarantee",
+      description: "We stand behind our work with solid warranties - 90 days on appliance repairs and 1 year on wall finishing. Our commitment doesn't end at completion; we're always available for follow-up questions or concerns. This dedication to service excellence has earned us our reputation as Vancouver's trusted repair specialists, with over 500 satisfied clients across the Lower Mainland."
     }
   ];
 
@@ -45,16 +45,16 @@ const StepsSection = () => {
     <section className="w-full py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">6 STEPS TO PROJECT SUCCESS</h2>
+          <h2 className="text-4xl font-bold mb-4">OUR SERVICE PROCESS</h2>
           <div className="flex items-center justify-center mb-6">
             <div className="h-px w-12 bg-yellow-500"></div>
-            <p className="mx-4 text-lg">From Small Repairs to Enterprise Solutions</p>
+            <p className="mx-4 text-lg">From Broken to Like-New</p>
             <div className="h-px w-12 bg-yellow-500"></div>
           </div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Our refined six-step process represents decades of industry expertise in Vancouver and Burnaby, 
-            designed to deliver exceptional results regardless of project scale. Every step is carefully 
-            crafted to ensure superior quality and complete client satisfaction.
+            Our proven six-step process ensures excellent results whether you need appliance repairs 
+            or wall finishing. Every step is designed to deliver efficient, high-quality service 
+            with complete customer satisfaction.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const StepsSection = () => {
             onClick={() => window.open('/quote', '_current')}
             className="bg-black text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-yellow-500 transition-colors duration-300"
           >
-            Start Your Project
+            Schedule Your Repair
           </button>
         </div>
       </div>

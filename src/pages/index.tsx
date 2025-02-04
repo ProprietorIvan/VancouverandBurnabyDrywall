@@ -10,11 +10,11 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Head from 'next/head';
 
-const SITE_URL = 'https://burnabydrywall.ca';
-const SITE_NAME = 'Vancouver and Burnaby Wall Repair Ltd.';
-const SITE_DESCRIPTION = 'Professional wall repair, installation, and finishing services across Vancouver and Burnaby. Expert contractors with 500+ satisfied clients.';
-const BUSINESS_EMAIL = 'office@burnabydrywall.ca';
-const BUSINESS_PHONE = '(778) 652-7277';
+const SITE_URL = 'https://pointgreyrentals.com';
+const SITE_NAME = 'PG Wall Finishing & Repair Co.';
+const SITE_DESCRIPTION = 'Your trusted appliance repair specialists in Vancouver. Professional service for all major brands plus expert wall repair and finishing services. Fast, reliable repairs when you need them.';
+const BUSINESS_EMAIL = 'office@pointgreyrentals.com';
+const BUSINESS_PHONE = '(647) 362-6948';
 
 const Home = () => {
   const router = useRouter();
@@ -24,22 +24,24 @@ const Home = () => {
     '@type': 'LocalBusiness',
     '@id': `${SITE_URL}/#organization`,
     name: SITE_NAME,
-    alternateName: 'PG Wall Finishing',
+    alternateName: 'PG Appliance & Wall Repair',
     image: `${SITE_URL}/photos/homepage/1.jpg`,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
-    email: BUSINESS_EMAIL,
     telephone: BUSINESS_PHONE,
+    email: BUSINESS_EMAIL,
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Burnaby',
+      streetAddress: '1223 Homer St',
+      addressLocality: 'Vancouver',
       addressRegion: 'BC',
+      postalCode: 'V6B 1C5',
       addressCountry: 'CA'
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 49.2488,
-      longitude: -122.9805
+      latitude: 49.2763,
+      longitude: -123.1223
     },
     areaServed: [
       {
@@ -52,21 +54,21 @@ const Home = () => {
       },
       {
         '@type': 'City',
-        name: 'New Westminster'
+        name: 'Richmond'
       },
       {
         '@type': 'City',
-        name: 'Richmond'
+        name: 'North Vancouver'
       }
     ],
     priceRange: '$$',
-    openingHours: 'Mo-Sa 08:00-18:00'
+    openingHours: 'Mo-Su 08:00-20:00'
   };
 
   const serviceSchema = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: ['Wall Finishing', 'Drywall Repair', 'Appliance Repair'],
+    serviceType: ['Appliance Repair', 'Wall Repair', 'Wall Finishing'],
     provider: {
       '@id': `${SITE_URL}/#organization`
     },
@@ -82,57 +84,34 @@ const Home = () => {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Wall Finishing',
-            description: 'Expert wall and drywall finishing services in Vancouver and Burnaby'
-          }
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
             name: 'Appliance Repair',
-            description: 'Professional repair services for all major appliance brands'
+            description: 'Expert repair services for all major home appliances including refrigerators, washers, dryers, dishwashers, and ovens'
           }
         },
         {
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Drywall Repair',
-            description: 'Expert drywall repair and patch services'
+            name: 'Wall Repair',
+            description: 'Professional wall and drywall repair services'
+          }
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Wall Finishing',
+            description: 'Expert wall finishing and texturing services'
           }
         }
       ]
     }
   };
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'How long does a typical drywall repair take?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Small repairs like patching holes can be completed in 2-4 hours. Larger repairs or full room installations typically take 1-2 days.'
-        }
-      },
-      {
-        '@type': 'Question',
-        name: 'Do you provide free estimates?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Yes, we provide free, no-obligation estimates for all drywall repair and installation projects in Vancouver and Burnaby.'
-        }
-      }
-    ]
-  };
-
   return (
     <>
       <Head>
-        <title>{SITE_NAME} | Expert Drywall Services in Vancouver & Burnaby</title>
+        <title>{SITE_NAME} | Vancouver Appliance Repair & Wall Finishing Experts</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -140,7 +119,7 @@ const Home = () => {
         {/* Open Graph */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
-        <meta property="og:title" content={`${SITE_NAME} | Expert Drywall Services in Vancouver & Burnaby`} />
+        <meta property="og:title" content={`${SITE_NAME} | Expert Appliance & Wall Repair Services`} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content={`${SITE_URL}/photos/homepage/1.jpg`} />
         <meta property="og:site_name" content={SITE_NAME} />
@@ -149,18 +128,18 @@ const Home = () => {
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content={SITE_URL} />
-        <meta name="twitter:title" content={`${SITE_NAME} | Expert Drywall Services`} />
+        <meta name="twitter:title" content={`${SITE_NAME} | Vancouver's Repair Experts`} />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content={`${SITE_URL}/photos/homepage/1.jpg`} />
 
         {/* Additional SEO Meta Tags */}
-        <meta name="keywords" content="wall finishing vancouver, appliance repair vancouver, drywall repair burnaby, appliance repair burnaby, home repair services" />
+        <meta name="keywords" content="appliance repair vancouver, dishwasher repair, fridge repair, washing machine repair, wall repair vancouver, drywall repair" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content={SITE_NAME} />
         <meta name="geo.region" content="CA-BC" />
-        <meta name="geo.placename" content="Burnaby" />
-        <meta name="geo.position" content="49.2488;-122.9805" />
-        <meta name="ICBM" content="49.2488, -122.9805" />
+        <meta name="geo.placename" content="Vancouver" />
+        <meta name="geo.position" content="49.2763;-123.1223" />
+        <meta name="ICBM" content="49.2763, -123.1223" />
 
         {/* Canonical URL */}
         <link rel="canonical" href={SITE_URL} />
@@ -174,15 +153,6 @@ const Home = () => {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
         />
-        <script 
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-        />
-        
-        {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       </Head>
 
       <div className="min-h-screen bg-white">
@@ -193,7 +163,7 @@ const Home = () => {
           <div className="absolute inset-0 w-full h-full">
             <Image
               src="/photos/homepage/1.jpg"
-              alt="Professional Drywall Repair Services in Vancouver & Burnaby"
+              alt="Professional Appliance Repair Services in Vancouver"
               fill
               className="object-cover object-[85%_25%]"
               priority
@@ -204,10 +174,13 @@ const Home = () => {
           <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32 w-full">
             <div className="max-w-2xl">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white">
-                Expert Wall Repairs in Vancouver and Burnaby
+                PG Wall Finishing & Repair Co.
               </h1>
+              <p className="text-2xl md:text-3xl text-white mb-4">
+                Vancouver Appliance Repair Specialists
+              </p>
               <p className="text-xl md:text-2xl text-white mb-8">
-                Professional drywall installation, repair, and finishing services across Vancouver and Burnaby
+                Expert repairs for all major appliances plus professional wall finishing services. Fast, reliable, and trusted by homeowners across Vancouver.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <button
@@ -228,7 +201,7 @@ const Home = () => {
                     <Star key={i} className="w-6 h-6 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <span className="text-white text-lg">500+ Satisfied Clients in Vancouver & Burnaby</span>
+                <span className="text-white text-lg">500+ Satisfied Clients in Vancouver</span>
               </div>
             </div>
           </div>
@@ -245,10 +218,10 @@ const Home = () => {
         <section className="bg-black text-white py-24">
           <div className="max-w-7xl mx-auto px-4 text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Need Professional Wall Repair Services in Vancouver and Burnaby?
+              Need Your Appliances Fixed?
             </h2>
             <p className="text-gray-300 mb-12 text-xl max-w-3xl mx-auto">
-              Join hundreds of satisfied Vancouver and Burnaby homeowners who trust us with their drywall needs
+              From refrigerators to dishwashers, we fix all major appliances. Plus, expert wall repair services when you need them.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
