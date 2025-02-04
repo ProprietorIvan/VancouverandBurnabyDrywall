@@ -1,26 +1,25 @@
 import { Star } from "lucide-react";
-import Card from "./Card";
 import Image from 'next/image';
 
 const Reviews = () => {
   const reviews = [
     {
       src: '/photos/homepage/5.jpg',
-      name: "Sarah Thompson",
-      role: "Homeowner in Toronto",
-      text: "Exceptional drywall work! They transformed our damaged walls after a water leak. The team was professional, cleaned up thoroughly, and the finished walls look flawless. Couldn't be happier with the results!"
+      name: "David Chen",
+      role: "Homeowner in Vancouver",
+      text: "Called them when my dishwasher stopped working and they were here the same day. Fixed the issue quickly and even repaired some drywall damage behind the unit. Professional service and fair pricing. Highly recommend!"
     },
     {
       src: '/photos/homepage/6.jpg',
-      name: "Michael Roberts",
-      role: "Commercial Property Owner",
-      text: "Best drywall contractors in Toronto! They handled our office renovation with incredible attention to detail. The crew was efficient, and their expertise in commercial drywall installation was evident. Highly recommend!"
+      name: "Sarah Wong",
+      role: "Property Manager, Burnaby",
+      text: "We use PG Wall Finishing for all our appliance rentals and repairs. They maintain our entire fleet of rental units and their response time is incredible. The wall repair service is an added bonus - saves us from calling multiple contractors."
     },
     {
       src: '/photos/homepage/7.jpg',
-      name: "Emily Chen",
-      role: "Interior Designer",
-      text: "Their craftsmanship is outstanding. As an interior designer, I need reliable contractors who deliver quality work. Their drywall finishing is impeccable, and they always meet deadlines. They're my go-to drywall team."
+      name: "James Miller",
+      role: "Restaurant Owner",
+      text: "When our commercial freezer broke down, they saved our business thousands in potential losses. The technician diagnosed and fixed the issue within hours. We now use their maintenance service for all our appliances. Top-notch professionals!"
     }
   ];
 
@@ -28,16 +27,16 @@ const Reviews = () => {
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-16">
-          Reviews
+          What Our Clients Say
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.map((review, index) => (
-            <Card 
+            <div 
               key={index} 
-              className="bg-white p-8 border-none hover:shadow-xl transition-all duration-300 group rounded-xl"
+              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="flex items-center gap-4 mb-6">
-                <div className="relative w-16 h-16">
+                <div className="relative w-16 h-16 flex-shrink-0">
                   <Image
                     src={review.src}
                     alt={review.name}
@@ -52,16 +51,22 @@ const Reviews = () => {
               </div>
               <div className="flex gap-1 mb-4">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-[#FACC15] stroke-[#FACC15]" />
+                  <Star 
+                    key={i} 
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400" 
+                    aria-hidden="true"
+                  />
                 ))}
               </div>
-              <p className="text-gray-700 text-base leading-relaxed">{review.text}</p>
-            </Card>
+              <p className="text-gray-700 text-base leading-relaxed">
+                {review.text}
+              </p>
+            </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Reviews;
