@@ -66,7 +66,7 @@ const ComparisonSection = () => {
       <div className="bg-black w-full py-12 px-4">
         <div className="max-w-6xl mx-auto text-center space-y-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-12">
-            Vancouver and Burnaby Premier Repair Specialists
+            Vancouver and Burnaby&apos;s Premier Appliance & Repair Specialists
           </h1>
           
           <button
@@ -119,7 +119,7 @@ const ComparisonSection = () => {
             <h2 className="text-5xl font-bold mb-6">OUR EXPERTISE</h2>
             <div className="flex justify-center items-center gap-4 mb-8">
               <div className="h-px w-16 bg-yellow-400" />
-              <p className="text-lg text-gray-600">Comprehensive Drywall & Appliance Solutions</p>
+              <p className="text-lg text-gray-600">Repair Services, Rentals & More</p>
               <div className="h-px w-16 bg-yellow-400" />
             </div>
           </div>
