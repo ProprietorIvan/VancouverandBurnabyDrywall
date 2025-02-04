@@ -10,11 +10,11 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              Vancouver and Burnaby Wall Repair
+              PG Wall Finishing & Repair Co.
             </h3>
             <div className="h-1 w-12 bg-yellow-400 mb-6"></div>
             <p className="text-gray-300 leading-relaxed">
-              From small repairs to complete commercial installations, we deliver professional wall repair services across Vancouver and Burnaby. Our commitment to quality and customer satisfaction makes us the Lower Mainland preferred choice for all wall repair needs.
+              From small repairs to complete commercial installations, we deliver professional wall repair services across Vancouver and Burnaby. Our commitment to quality and customer satisfaction makes us the Lower Mainland's preferred choice for all wall repair needs.
             </p>
           </div>
 
@@ -77,11 +77,11 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <p>(778) 652-7277</p>
+                <p>(647) 362-6948</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <p>office@burnabydrywall.ca</p>
+                <p>office@pointgreyrentals.com</p>
               </div>
               <div className="flex space-x-4 mt-6 pt-6 border-t border-gray-800">
                 <a 
@@ -106,7 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <p>© {new Date().getFullYear()} Vancouver and Burnaby Wall Repair Ltd. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} PG Wall Finishing & Repair Co. All rights reserved.</p>
             <div className="flex space-x-8 mt-4 md:mt-0">
               <Link href="/privacy" className="hover:text-yellow-400 transition-colors">
                 Privacy Policy
