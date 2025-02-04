@@ -13,29 +13,29 @@ interface Service {
 const ComparisonSection = () => {
   const services: Service[] = [
     {
-      title: "RESIDENTIAL DRYWALL",
-      description: "From single room repairs to complete home renovations, our expert team delivers flawless results for homeowners across Toronto.",
+      title: "RESIDENTIAL WALL REPAIR",
+      description: "From single room repairs to complete home renovations, our expert team delivers flawless results for homeowners across Vancouver and Burnaby.",
       buttonText: "RESIDENTIAL SERVICES",
       image: "/photos/homepage/1.jpg",
       url: "/residential"
     },
     {
-      title: "COMMERCIAL DRYWALL",
-      description: "Specializing in large-scale commercial projects, we bring efficiency and expertise to office buildings, retail spaces, and industrial facilities.",
+      title: "COMMERCIAL WALL REPAIR",
+      description: "Specializing in large-scale commercial projects, we bring efficiency and expertise to office buildings, retail spaces, and industrial facilities throughout Metro Vancouver.",
       buttonText: "COMMERCIAL SERVICES",
       image: "/photos/homepage/2.jpg",
       url: "/commercial"
     },
     {
       title: "NEW CONSTRUCTION",
-      description: "Partner with Toronto&#39;s leading drywall experts for your new construction project. We work seamlessly with developers and contractors.",
+      description: "Partner with Vancouver's leading wall repair experts for your new construction project. We work seamlessly with developers and contractors across the Lower Mainland.",
       buttonText: "NEW CONSTRUCTION",
       image: "/photos/homepage/3.jpg",
       url: "/new-construction"
     },
     {
       title: "SPECIALTY FINISHES",
-      description: "Elevate your spaces with our specialty drywall finishes. From custom textures to Level 5 finishes for high-end properties.",
+      description: "Elevate your spaces with our specialty wall finishes. From custom textures to Level 5 finishes for high-end properties in Vancouver and Burnaby.",
       buttonText: "SPECIALTY SERVICES",
       image: "/photos/homepage/1.jpg",
       url: "/specialty"
@@ -66,11 +66,11 @@ const ComparisonSection = () => {
       <div className="bg-black w-full py-12 px-4">
         <div className="max-w-6xl mx-auto text-center space-y-8">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-12">
-            Toronto&#39;s Premier Drywall Specialists
+            Vancouver and Burnaby Premier Wall Repair Specialists
           </h1>
           
           <button
-            onClick={() => copyToClipboard("7786534862", true)}
+            onClick={() => copyToClipboard("7786527277", true)}
             className="w-full text-center transition-transform duration-200"
           >
             <div 
@@ -85,14 +85,14 @@ const ComparisonSection = () => {
                   <Check className="w-8 h-8 md:w-12 md:h-12 animate-in fade-in duration-200" />
                 </div>
               ) : (
-                '+1 778-653-4862'
+                '(778) 652-7277'
               )}
             </div>
           </button>
 
           <div className="flex justify-center">
             <button 
-              onClick={() => copyToClipboard("office@toronto-drywall.com", false)}
+              onClick={() => copyToClipboard("office@burnabydrywall.ca", false)}
               className={`${
                 copiedEmail 
                   ? 'bg-green-400 scale-95' 
@@ -119,7 +119,7 @@ const ComparisonSection = () => {
             <h2 className="text-5xl font-bold mb-6">OUR EXPERTISE</h2>
             <div className="flex justify-center items-center gap-4 mb-8">
               <div className="h-px w-16 bg-yellow-400" />
-              <p className="text-lg text-gray-600">Comprehensive Drywall Solutions</p>
+              <p className="text-lg text-gray-600">Comprehensive Wall Repair Solutions</p>
               <div className="h-px w-16 bg-yellow-400" />
             </div>
           </div>

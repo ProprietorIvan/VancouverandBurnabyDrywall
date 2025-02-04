@@ -7,37 +7,37 @@ const StepsSection = () => {
       icon: Phone,
       number: "01",
       title: "Initial Contact",
-      description: "The journey to perfect walls begins here. Our expert team takes the time to deeply understand your project requirements, whether you're dealing with a minor repair or planning a multi-floor commercial installation. We'll discuss your timeline, specific requirements, and any unique challenges your project might present. Within 24 hours, you'll receive a comprehensive quote that breaks down every aspect of the work, ensuring complete transparency from day one."
+      description: "The journey to perfect walls begins here. Our expert team takes the time to deeply understand your project requirements, whether you're dealing with a minor repair or planning a multi-floor commercial installation in Vancouver or Burnaby. We'll discuss your timeline, specific requirements, and any unique challenges your project might present. Within 24 hours, you'll receive a comprehensive quote that breaks down every aspect of the work, ensuring complete transparency from day one."
     },
     {
       icon: ClipboardCheck,
       number: "02",
       title: "Expert Assessment",
-      description: "This crucial step sets the foundation for success. Our seasoned professionals conduct a thorough on-site evaluation, analyzing everything from substrate conditions to environmental factors that could impact your project. We'll identify potential challenges before they become issues and develop a strategic approach tailored to your specific situation. Years of handling projects across every scale have taught us that proper planning eliminates 90% of potential complications."
+      description: "This crucial step sets the foundation for success. Our seasoned professionals conduct a thorough on-site evaluation, analyzing everything from substrate conditions to environmental factors that could impact your project. We're particularly experienced with the unique challenges presented by Vancouver's climate and building styles. We'll identify potential challenges before they become issues and develop a strategic approach tailored to your specific situation. Years of handling projects across Metro Vancouver have taught us that proper planning eliminates 90% of potential complications."
     },
     {
       icon: Building2,
       number: "03",
       title: "Professional Construction",
-      description: "This is where experience truly matters. Our crews bring decades of combined expertise to every project, from precise patch jobs to complete building envelopes. We utilize advanced techniques and premium materials that ensure longevity and perfection. Our team coordinates seamlessly with other trades when necessary, maintaining strict timelines while never compromising on quality. Whether it's a small repair or a massive commercial project, we approach each task with the same level of dedication and precision."
+      description: "This is where experience truly matters. Our crews bring decades of combined expertise to every project, from precise patch jobs to complete building envelopes. We utilize advanced techniques and premium materials that ensure longevity and perfection, particularly important in Vancouver's variable climate. Our team coordinates seamlessly with other trades when necessary, maintaining strict timelines while never compromising on quality. Whether it's a small repair in Burnaby or a massive commercial project in Vancouver, we approach each task with the same level of dedication and precision."
     },
     {
       icon: Wrench,
       number: "04",
       title: "Expert Finishing",
-      description: "The difference between good and exceptional lies in the details. Our finishing process involves multiple stages of careful preparation and skilled application. We've mastered the art of matching existing textures and creating flawless new surfaces. Each wall receives multiple inspections under various lighting conditions to ensure perfect uniformity. This meticulous attention to detail is why our work stands out and why clients consistently trust us with their most demanding projects."
+      description: "The difference between good and exceptional lies in the details. Our finishing process involves multiple stages of careful preparation and skilled application. We've mastered the art of matching existing textures and creating flawless new surfaces, adapting our techniques to suit both modern and heritage buildings throughout Vancouver and Burnaby. Each wall receives multiple inspections under various lighting conditions to ensure perfect uniformity. This meticulous attention to detail is why our work stands out and why clients consistently trust us with their most demanding projects."
     },
     {
       icon: CheckCircle2,
       number: "05",
       title: "Quality Inspection",
-      description: "Our quality control process is what sets us apart in the industry. Every surface undergoes a comprehensive multi-point inspection. We examine not just the obvious aspects but delve deeper - checking for proper depth of joints, perfect seam alignment, and complete uniformity of finish. We use specialized lighting and advanced techniques to identify and address any imperfections that might be invisible to the untrained eye. This thoroughness ensures that your project will meet not just industry standards, but our own exacting criteria."
+      description: "Our quality control process is what sets us apart in the Lower Mainland's construction industry. Every surface undergoes a comprehensive multi-point inspection. We examine not just the obvious aspects but delve deeper - checking for proper depth of joints, perfect seam alignment, and complete uniformity of finish. We use specialized lighting and advanced techniques to identify and address any imperfections that might be invisible to the untrained eye. This thoroughness ensures that your project will meet not just industry standards, but our own exacting criteria."
     },
     {
       icon: Sparkles,
       number: "06",
       title: "Complete Satisfaction",
-      description: "The final step is ensuring your complete satisfaction with our work. We conduct a detailed walkthrough, explaining the technical aspects of what we've done and how to maintain the perfect finish we've achieved. Any concerns are addressed immediately by our expert team. This commitment to excellence doesn't end with project completion - we're always available to provide expert advice or address any future needs. It's this dedication to client satisfaction that's earned us our reputation as Toronto's premier drywall specialists."
+      description: "The final step is ensuring your complete satisfaction with our work. We conduct a detailed walkthrough, explaining the technical aspects of what we've done and how to maintain the perfect finish we've achieved. Any concerns are addressed immediately by our expert team. This commitment to excellence doesn't end with project completion - we're always available to provide expert advice or address any future needs. It's this dedication to client satisfaction that's earned us our reputation as Vancouver and Burnaby's premier wall repair specialists."
     }
   ];
 
@@ -52,9 +52,9 @@ const StepsSection = () => {
             <div className="h-px w-12 bg-yellow-500"></div>
           </div>
           <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-            Our refined six-step process represents decades of industry expertise, designed to deliver 
-            exceptional results regardless of project scale. Every step is carefully crafted to ensure 
-            superior quality and complete client satisfaction.
+            Our refined six-step process represents decades of industry expertise in Vancouver and Burnaby, 
+            designed to deliver exceptional results regardless of project scale. Every step is carefully 
+            crafted to ensure superior quality and complete client satisfaction.
           </p>
         </div>
 

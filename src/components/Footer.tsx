@@ -10,11 +10,11 @@ const Footer = () => {
           {/* About Section */}
           <div>
             <h3 className="text-xl font-bold mb-4">
-              Toronto Drywall
+              Vancouver and Burnaby Wall Repair
             </h3>
             <div className="h-1 w-12 bg-yellow-400 mb-6"></div>
             <p className="text-gray-300 leading-relaxed">
-              From small repairs to complete commercial installations, we deliver professional drywall services across the Greater Toronto Area. Our commitment to quality and customer satisfaction makes us Toronto&apos;s preferred choice for all drywall needs.
+              From small repairs to complete commercial installations, we deliver professional wall repair services across Vancouver and Burnaby. Our commitment to quality and customer satisfaction makes us the Lower Mainland preferred choice for all wall repair needs.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const Footer = () => {
             <ul className="space-y-3 text-gray-300">
               <li>
                 <Link href="/residential" className="hover:text-yellow-400 transition-colors">
-                  Residential Drywall
+                  Residential Wall Repair
                 </Link>
               </li>
               <li>
@@ -42,7 +42,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link href="/repairs" className="hover:text-yellow-400 transition-colors">
-                  Drywall Repairs
+                  Wall Repairs
                 </Link>
               </li>
             </ul>
@@ -55,12 +55,12 @@ const Footer = () => {
             </h3>
             <div className="h-1 w-12 bg-yellow-400 mb-6"></div>
             <ul className="space-y-3 text-gray-300">
-              <li>Toronto</li>
-              <li>North York</li>
-              <li>Etobicoke</li>
-              <li>Scarborough</li>
-              <li>Mississauga</li>
-              <li>Greater Toronto Area</li>
+              <li>Vancouver</li>
+              <li>Burnaby</li>
+              <li>New Westminster</li>
+              <li>Richmond</li>
+              <li>Coquitlam</li>
+              <li>Metro Vancouver</li>
             </ul>
           </div>
 
@@ -73,15 +73,15 @@ const Footer = () => {
             <div className="text-gray-300 space-y-4">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 text-yellow-400" />
-                <p>Toronto, Ontario</p>
+                <p>Burnaby, British Columbia</p>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-yellow-400" />
-                <p>+1 778-653-4862</p>
+                <p>(778) 652-7277</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-yellow-400" />
-                <p>office@toronto-drywall.com</p>
+                <p>office@burnabydrywall.ca</p>
               </div>
               <div className="flex space-x-4 mt-6 pt-6 border-t border-gray-800">
                 <a 
@@ -106,7 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <p>© {new Date().getFullYear()} Toronto Drywall. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Vancouver and Burnaby Wall Repair Ltd. All rights reserved.</p>
             <div className="flex space-x-8 mt-4 md:mt-0">
               <Link href="/privacy" className="hover:text-yellow-400 transition-colors">
                 Privacy Policy
